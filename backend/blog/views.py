@@ -55,34 +55,6 @@ def form_view(request):
     return render(request, 'base.html', {'form': form, 'posts': ContactDetails.objects.all(), 'title': 'ACE OF STATE'})
 
 
-# def send_whatsapp_message(name, message, numbers):
-#     account_sid = 'AC60c621194bedabb282a623d6364a8b55'
-#     auth_token = '[AuthToken]'
-#     client = Client(account_sid, auth_token)
-#
-#     from_whatsapp_number = 'whatsapp:+14155238886'  # Номер от Twilio
-#     to_whatsapp_number = 'whatsapp:+375298093214'  # Ваш номер
-#
-#     client.messages.create(
-#         body=f"Имя: {name}\nСообщение: {message}\nНомер телефона: {numbers}",
-#         from_=from_whatsapp_number,
-#         to=to_whatsapp_number
-#     )
-#
-# def contact(request):
-#     if request.method == 'POST':
-#         form = TGForm(request.POST)
-#         if form.is_valid():
-#             name = form.cleaned_data['name']
-#             message = form.cleaned_data['message']
-#             numbers = form.cleaned_data['numbers']
-#             send_whatsapp_message(name, message, numbers)
-#             return render(request, 'success.html')
-#     else:
-#         form = TGForm()
-#
-#     return render(request, 'base.html', {'form': form})
-
 
 class ContactDetailsView(ListView):
     model = ContactDetails

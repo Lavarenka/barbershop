@@ -15,8 +15,8 @@ class ApplicationAdmin(admin.ModelAdmin):
 
 @admin.register(Service)
 class ServiceAdmin(admin.ModelAdmin):
-    list_display = ('title',)
-
+    list_display = ('title', 'order')
+    list_editable = ('order',)
 
 @admin.register(ContactDetails)
 class ContactDetailsAdmin(admin.ModelAdmin):
@@ -26,3 +26,4 @@ class ContactDetailsAdmin(admin.ModelAdmin):
 @admin.register(SocialItem)
 class SocialItemAdmin(admin.ModelAdmin):
     list_display = ('name',)
+

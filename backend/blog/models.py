@@ -18,9 +18,13 @@ class Post(models.Model):
 class Service(models.Model):
     title = models.CharField(max_length=200, verbose_name="Title")
     description = models.TextField(blank=True, verbose_name="Description")
+    order = models.PositiveSmallIntegerField(default=0, verbose_name="Order")
 
     def __str__(self):
         return self.title
+
+    class Meta:
+        ordering = ['order']
 
 
 class Application(models.Model):
