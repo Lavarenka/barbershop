@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+
+/*==========================================================*/
+
+
+/* обнуление */
+
+._img {
+
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+._img img {
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto ;
+
+
+}
+
+
+.border_ {
+    border: 2px solid red;
+}
+
+html,
+body {
+    height: 100%;
+    /*background-color: #100e19;*/
+    color: #fff;
+
+}
+
+body {
+    min-width: 320px;
+    /*font-family: "Roboto", sans-serif;*/
+    /*background-image: url("../img/barber_obuchenie.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
+    /*background: url("../img/logo_noname.jpeg") no-repeat top center fixed;*/
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*-o-background-size: cover;*/
+    /*background-size: cover;*/
+    background-color: #0D0D0D;
+}
+
+html {
+
+}
+
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    /*border: 1px solid white;*/
+
+
+}
+
+main.main {
+    flex: 1 1 auto;
+}
+
+.header {
+
+}
+
+.footer {
+
+}
+
+.main_floor {
+    /*font-size: 4rem;*/
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #D7CF96;
+}
+
+
+.main_floor_2 {
+    /*background: url("../img/logo_noname.jpeg") no-repeat center center ;*/
+    /*background-image: url("../img/logo_noname.jpeg");*/
+    flex: 1 1 auto;
+}
+
+.text_color {
+    color: #D7CF96;
+}
+
+.form__btn {
+    /*background-color: #312B45;*/
+    border: 1px solid #D7CF96;
+    color: #D7CF96;
+    padding: 20px 16px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.form__btn_ch{
+    border: 1px solid #D7CF96;
+    color: #D7CF96;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+
+.form__btn_ch:hover,
+.form__btn:hover {
+    background-color: #D7CF96;
+    color: #0D0D0D;
+}
+
+.modal_set {
+    background-color:  #0D0D0D;
+    color: #D7CF96;
+    border-radius: 5%;
+    border: 1px solid #D7CF96;
+    padding: 3% 7%;
+}
+
+.message i {
+    font-size: 25px;
+    color: #D7CF96;
+
+}
+
+
+.header_logo{
+    font-weight: bold;
+    font-size: 20px;
+}
