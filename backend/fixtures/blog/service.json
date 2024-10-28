@@ -1,0 +1,1 @@
+[{"model": "blog.service", "pk": 1, "fields": {"title": "1", "description": "", "order": 1}}, {"model": "blog.service", "pk": 2, "fields": {"title": "2", "description": "", "order": 2}}]
