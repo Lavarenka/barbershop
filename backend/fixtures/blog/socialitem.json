@@ -1,1 +1,1 @@
-[{"model": "blog.socialitem", "pk": 1, "fields": {"name": "instagram", "icon": "<i class=\"fa-brands fa-instagram\"></i>", "link": "https://www.instagram.com/ace_of_state?igsh=aHA0bXdqaTRpazBk"}}, {"model": "blog.socialitem", "pk": 2, "fields": {"name": "html", "icon": "<i class=\"fa-brands fa-python\"></i>", "link": "a"}}]
+[{"model": "blog.socialitem", "pk": 1, "fields": {"name": "instagram", "icon": "<i class=\"fa-brands fa-instagram\"></i>", "link": "https://www.instagram.com/ace_of_state?igsh=aHA0bXdqaTRpazBk"}}]
