@@ -155,4 +155,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:80',
     'http://localhost:1337',
+    'https://ace-of-state.com',
+    'https://www.ace-of-state.com'
 ]
