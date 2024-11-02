@@ -9,7 +9,6 @@ services:
     volumes:
       - static_volume:/home/app/web/static
       - media_volume:/home/app/web/media
-
     expose:
       - 8000
     env_file:
@@ -27,27 +26,10 @@ services:
     volumes:
       - static_volume:/home/app/web/static
       - media_volume:/home/app/web/media
-      - ./certs:/etc/letsencrypt
-      - ./www:/var/www/certbot
     ports:
       - 80:80
-      - 443:443 #
     depends_on:
       - web
-  certbot:
-    image: certbot/certbot
-    depends_on:
-      - nginx
-    container_name: certbot
-    volumes:
-      - ./certs:/etc/letsencrypt
-      - ./www:/var/www/certbot
-#    command: certonly --webroot -w /var/www/certbot --force-renewal --email arty_h41@mail.ru -d ace-of-state.com --agree-tos
-    command: certonly --webroot --webroot-path=/var/www/certbot --email arty_h41@mail.ru --agree-tos --no-eff-email -d ace-of-state.com
-
-
-
-
 volumes:
   postgres_data:
   static_volume:
