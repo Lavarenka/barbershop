@@ -109,7 +109,7 @@ h6 {
 ._img img {
     max-height: 100%;
     max-width: 100%;
-    margin: auto ;
+    margin: auto;
 
 
 }
@@ -197,7 +197,7 @@ main.main {
     font-weight: bold;
 }
 
-.form__btn_ch{
+.form__btn_ch {
     border: 1px solid #D7CF96;
     color: #D7CF96;
     padding: 15px 25px;
@@ -213,7 +213,7 @@ main.main {
 }
 
 .modal_set {
-    background-color:  #0D0D0D;
+    background-color: #0D0D0D;
     color: #D7CF96;
     border-radius: 5%;
     border: 1px solid #D7CF96;
@@ -227,7 +227,47 @@ main.main {
 }
 
 
-.header_logo{
+.header_logo {
     font-weight: bold;
     font-size: 20px;
+}
+
+
+/* message modal */
+.fade-out {
+    opacity: 1;
+    transition: opacity 0.5s ease-out; /* Плавный переход */
+}
+
+.fade-out.hide {
+    opacity: 0; /* Скрываем элемент */
+}
+
+.modal-dialog_message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid #D7CF96;
+    background: rgb(13, 13, 13);
+    color: #D7CF96;
+
+
+}
+
+.text_color{
+     color: #D7CF96 !important;
+
+}
+
+.modal-dialog_message .modal-body p {
+    opacity: 1;
+    color: black;
+
+}
+
+/* /message modal */
+
+.iti {
+    width: 100%;
 }

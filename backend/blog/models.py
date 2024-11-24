@@ -27,6 +27,13 @@ class Service(models.Model):
         ordering = ['order']
 
 
+class TimeSlots(models.Model):
+    title = models.CharField(max_length=200, verbose_name="Title", )
+
+    def __str__(self):
+        return self.title
+
+
 class Application(models.Model):
     first_name = models.CharField(max_length=150, verbose_name="First Name")
     last_name = models.CharField(max_length=150, verbose_name="Last Name")
@@ -35,7 +42,8 @@ class Application(models.Model):
     number = models.CharField(max_length=30, verbose_name="Number")
     date_of_birth = models.DateField(verbose_name="Date of Birth", blank=True, null=True)
     time_of_death = models.TimeField(verbose_name="Time of Death", blank=True, null=True)
-    service = models.ForeignKey(Service, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Service")
+    service = models.ForeignKey(Service, on_delete=models.CASCADE, default=0, verbose_name="Service")
+    time_slots = models.ForeignKey(TimeSlots, on_delete=models.CASCADE, default=1, verbose_name="Time Slots")
 
     def __str__(self):
         return self.first_name

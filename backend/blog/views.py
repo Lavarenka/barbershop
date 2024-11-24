@@ -37,11 +37,11 @@ def form_view(request):
             message = form.cleaned_data['message']
             number = form.cleaned_data['number']
             date_of_birth = form.cleaned_data['date_of_birth']
-            time_of_death = form.cleaned_data['time_of_death']
+            time_slots = form.cleaned_data['time_slots']
             service = form.cleaned_data['service']
 
             full_message = f"first_name: {first_name}\nlast_name: {last_name}\nMessage: {message}" \
-                           f"\nPhone number: {number}\ndate_of_birth: {date_of_birth}\ndate_of_birth: {time_of_death}" \
+                           f"\nPhone number: {number}\ndate_of_birth: {date_of_birth}\ntime_slots: {time_slots}" \
                            f"\nservice: {service}"
 
             send_to_telegram(full_message)

@@ -27,3 +27,8 @@ class ContactDetailsAdmin(admin.ModelAdmin):
 class SocialItemAdmin(admin.ModelAdmin):
     list_display = ('name',)
 
+@admin.register(TimeSlots)
+class TimeSlotsAdmin(admin.ModelAdmin):
+    list_display = ('title',)
+
+
