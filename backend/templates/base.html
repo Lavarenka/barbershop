@@ -169,7 +169,7 @@
         disable: [
             function (date) {
                 // Запрещаем выбор воскресений (0 - воскресенье)
-                return date.getDay() === 0 || date <= new Date();
+                return date.getDay() === 0 || date < new Date().setHours(0, 0, 0, 0);
             }
         ],
         dateFormat: "Y-m-d", // Формат даты
